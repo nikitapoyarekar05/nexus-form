@@ -2,8 +2,8 @@
 
 A minimal and efficient form built with [React Hook Form](https://react-hook-form.com/) using TypeScript and Vite. This example demonstrates best practices for handling form state, validation, and controlled inputs in React.
 
-![Nexus Form Screenshot](screenshots/the form.png)
-![Nexus Form Screenshot with valdiation errors](screenshots/validation errors.png)
+![Nexus Form Screenshot](./screenshots/form.png)
+
 
 ## 🚀 Features
 
