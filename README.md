@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# Nexus Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal and efficient form built with [React Hook Form](https://react-hook-form.com/) using TypeScript and Vite. This example demonstrates best practices for handling form state, validation, and controlled inputs in React.
 
-Currently, two official plugins are available:
+![Nexus Form Screenshot](screenshots/the form.png)
+![Nexus Form Screenshot with valdiation errors](screenshots/validation errors.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **React Hook Form**: Utilizes the `useForm` hook for managing form state and validation.
+- **TypeScript**: Ensures type safety and enhances developer experience.
+- **Vite**: Provides a fast and modern build tool for React applications.
+- **Controlled Inputs**: Demonstrates the use of controlled components for form fields.
+- **Validation**: Implements basic form validation to ensure data integrity.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Installation
 
-## Expanding the ESLint configuration
+Clone the repository and install dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/nikitapoyarekar05/nexus-form.git
+cd nexus-form
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the development server:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Open your browser and navigate to `http://localhost:5173` to view the form in action.
+
+## ✅ Usage
+
+The form includes fields for user input, with validation rules applied to ensure correct data entry. Upon submission, the form data is logged to the console.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🙋‍♀️ Maintainer
+
+Built with ❤️ by [@nikitapoyarekar05](https://github.com/nikitapoyarekar05)
